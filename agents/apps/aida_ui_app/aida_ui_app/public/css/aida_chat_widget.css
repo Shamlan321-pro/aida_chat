@@ -1,0 +1,166 @@
+.aida-chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.aida-chat-widget .chat-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: var(--primary);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.aida-chat-widget .chat-toggle:hover {
+    transform: scale(1.1);
+}
+
+.aida-chat-widget .chat-icon {
+    display: block;
+}
+
+.aida-chat-widget .close-icon {
+    display: none;
+    font-size: 32px;
+}
+
+.aida-chat-widget.open .chat-icon {
+    display: none;
+}
+
+.aida-chat-widget.open .close-icon {
+    display: block;
+}
+
+.aida-chat-widget .chat-window {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 350px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.aida-chat-widget.open .chat-window {
+    display: flex;
+}
+
+.aida-chat-widget .chat-header {
+    padding: 15px;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aida-chat-widget .chat-header h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.aida-chat-widget .minimize-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+.aida-chat-widget .chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aida-chat-widget .chat-message {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.aida-chat-widget .chat-message.system {
+    align-self: center;
+    background: var(--gray-100);
+    text-align: center;
+    max-width: 90%;
+}
+
+.aida-chat-widget .chat-message.user {
+    align-self: flex-end;
+    background: var(--primary);
+    color: white;
+}
+
+.aida-chat-widget .chat-message.assistant {
+    align-self: flex-start;
+    background: var(--gray-100);
+}
+
+.aida-chat-widget .chat-message.error {
+    align-self: center;
+    background: var(--red-100);
+    color: var(--red-600);
+    text-align: center;
+}
+
+.aida-chat-widget .chat-input {
+    padding: 15px;
+    border-top: 1px solid var(--gray-200);
+    display: flex;
+    gap: 10px;
+}
+
+.aida-chat-widget textarea {
+    flex: 1;
+    border: 1px solid var(--gray-300);
+    border-radius: 5px;
+    padding: 8px;
+    resize: none;
+    height: 40px;
+    font-family: inherit;
+}
+
+.aida-chat-widget .send-btn {
+    padding: 8px 15px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.aida-chat-widget .send-btn:hover {
+    opacity: 0.9;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .aida-chat-widget .chat-window {
+        width: calc(100vw - 40px);
+        height: calc(100vh - 100px);
+        bottom: 70px;
+    }
+} 

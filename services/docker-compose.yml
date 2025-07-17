@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  aida-api:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - ERPNEXT_URL=${ERPNEXT_URL}
+      - ERPNEXT_USERNAME=${ERPNEXT_USERNAME}
+      - ERPNEXT_PASSWORD=${ERPNEXT_PASSWORD}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - MONGO_URI=mongodb://mongo:27017/aida_conversations
+    depends_on:
+      - mongo
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:6
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=aida_conversations
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - aida-api
+    restart: unless-stopped
+
+volumes:
+  mongo_data:

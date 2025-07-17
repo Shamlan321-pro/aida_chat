@@ -1,0 +1,128 @@
+{
+  "frappe": [
+    {
+      "name": "About Us Settings",
+      "module": "Website",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "About Us Team Member",
+      "module": "Website",
+      "is_custom": false,
+      "is_table": true
+    },
+    {
+      "name": "Access Log",
+      "module": "Core",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "Activity Log",
+      "module": "Core",
+      "is_custom": false,
+      "is_table": false
+    }
+  ],
+  "erpnext": [
+    {
+      "name": "Account",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "Account Closing Balance",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "Accounting Dimension",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "Accounting Dimension Detail",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": true
+    },
+    {
+      "name": "Accounting Dimension Filter",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "Accounting Period",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "Accounts Settings",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "Activity Cost",
+      "module": "Projects",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "Activity Type",
+      "module": "Projects",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "Advance Payment Ledger Entry",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "Advance Tax",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": true
+    },
+    {
+      "name": "Advance Taxes and Charges",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": true
+    },
+    {
+      "name": "Allowed Dimension",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": true
+    },
+    {
+      "name": "Allowed To Transact With",
+      "module": "Accounts",
+      "is_custom": false,
+      "is_table": true
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Address",
+      "module": "Contacts",
+      "is_custom": false,
+      "is_table": false
+    },
+    {
+      "name": "Address Template",
+      "module": "Contacts",
+      "is_custom": false,
+      "is_table": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# Google Maps Data Extractor API
+GMAPS_API_KEY=maps-5fb677d3af7c885418cef1106eadfaf603303a50a7972ef9
+
+# ERPNext Configuration
+ERPNEXT_URL=https://app.taskforgehq.com
+ERPNEXT_USERNAME=Administrator
+ERPNEXT_PASSWORD=admin
+
+# Google Gemini API (optional, for personalization)
+GOOGLE_API_KEY=AIzaSyB1xxasBK7ZSHyuXPbD6UMcGp1MBj5FuMo
+
+# Logging
+LOG_LEVEL=INFO
+
+# CRM Lead Outreach Configuration
+MAX_DAILY_OUTREACH=50
+LEAD_BATCH_SIZE=10
+ENABLE_LEAD_SCORING=true
+MIN_LEAD_SCORE=0.6
+
+# Wiki Configuration
+COMPANY_WIKI_NAME=Company Profile
+OUTREACH_TEMPLATE_WIKI_NAME=Lead Outreach Template
+
+# Fallback Configuration for Demo Campaigns
+DEMO_COMPANY_NAME=TaskForge Technologies
+DEMO_COMPANY_DESCRIPTION=We are a leading technology company specializing in business automation and CRM solutions that help companies streamline their operations and grow their customer base.
+DEMO_OUTREACH_MESSAGE=We help businesses like yours improve efficiency and customer relationships through our innovative technology solutions.
+FALLBACK_TO_DEMO_DATA=true

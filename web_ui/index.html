@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIDA - AI ERPNext Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span>AIDA</span>
+                </div>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="connection-status" id="connectionStatus">
+                    <div class="status-indicator offline" id="statusIndicator"></div>
+                    <span id="statusText">Disconnected</span>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3>Configuration</h3>
+                    <button class="sidebar-btn" id="configBtn">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </button>
+
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3>Session</h3>
+                    <button class="sidebar-btn" id="clearChatBtn">
+                        <i class="fas fa-trash"></i>
+                        <span>Clear Chat</span>
+                    </button>
+                    <button class="sidebar-btn" id="disconnectBtn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Disconnect</span>
+                    </button>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3>About</h3>
+                    <div class="about-info">
+                        <p>AIDA is an intelligent ERPNext assistant powered by Google Gemini AI and LangChain.</p>
+                        <div class="version">v1.0.0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>AIDA - AI ERPNext Assistant</h1>
+                <div class="header-actions">
+                    <button class="header-btn" id="themeToggle" title="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Chat Container -->
+            <div class="chat-container" id="chatContainer">
+                <div class="welcome-screen" id="welcomeScreen">
+                    <div class="welcome-content">
+                        <div class="welcome-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h2>Welcome to AIDA</h2>
+                        <p>Your intelligent ERPNext assistant powered by AI</p>
+                        <div class="feature-cards">
+                            <div class="feature-card">
+                                <i class="fas fa-database"></i>
+                                <h3>ERPNext Integration</h3>
+                                <p>Seamlessly interact with your ERPNext system</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-brain"></i>
+                                <h3>AI Powered</h3>
+                                <p>Advanced AI capabilities with Google Gemini</p>
+                            </div>
+
+                        </div>
+                        <button class="connect-btn" id="connectBtn">
+                            <i class="fas fa-plug"></i>
+                            Connect to ERPNext
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages" style="display: none;">
+                    <!-- Messages will be dynamically added here -->
+                </div>
+            </div>
+            
+            <!-- Chat Input -->
+            <div class="chat-input-container" id="chatInputContainer" style="display: none;">
+                <div class="chat-input">
+                    <textarea id="messageInput" placeholder="Type your message to AIDA..." rows="1"></textarea>
+                    <button id="sendBtn" class="send-btn" disabled>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="input-suggestions">
+                    <button class="suggestion-btn">Show me recent customers</button>
+                    <button class="suggestion-btn">Create a new lead</button>
+                    <button class="suggestion-btn">What are my pending tasks?</button>
+                    <button class="suggestion-btn">Generate sales report</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Configuration Modal -->
+    <div class="modal" id="configModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Configuration Settings</h2>
+                <button class="modal-close" id="configModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="configForm">
+                    <div class="form-group">
+                        <label for="erpnextUrl">ERPNext URL</label>
+                        <input type="url" id="erpnextUrl" placeholder="https://your-erpnext-site.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="your-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="your-password" required>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="configCancel">Cancel</button>
+                <button type="submit" form="configForm" class="btn btn-primary" id="configSave">Connect</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p id="loadingText">Connecting to AIDA...</p>
+        </div>
+    </div>
+    
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
