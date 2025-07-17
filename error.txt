@@ -1,0 +1,798 @@
+2025-07-16 21:57:19,581 - services.aida_agent - INFO - ℹ️ Google Maps API ke
+y not provided - CRM features disabled
+2025-07-16 21:57:19,582 - services.aida_agent - INFO - 🔍 Discovering ERPNext system capabilities...
+2025-07-16 21:57:19,603 - services.aida_agent - INFO - Attempting to discover apps via frappe.get_installed_apps API...
+<!DOCTYPE html>
+<!-- Built on Frappe. https://frappeframework.com/ -->
+<html lang="en" dir="ltr">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, 
+shrink-to-fit=no">
+        <meta name="generator" content="frappe">
+
+
+                <meta name="title" content="Not Permitted"><meta name="language" content="en"><meta property="og:type"  content="article"><meta property="og:title"  content="Not Permitted"><meta name="twitter:title" content="Not Permitted"><meta name="twitter:card" content="summary">
+
+
+        <title>Error</title>
+
+
+        <link
+                rel="shortcut icon"
+                href="/assets/erpnext/images/mocxha-favicon.svg"
+                type="image/x-icon"
+        >
+        <link type="text/css" rel="stylesheet" href="/assets/frappe/dist/css/website.bundle.62RSFCW2.css">
+<link type="text/css" rel="stylesheet" href="/assets/erpnext/dist/css/erpnext-web.bundle.MM76TTSY.css">
+<link rel="stylesheet" href="/assets/frappe/css/hljs-night-owl.css">        
+
+
+
+        <script>
+                window.frappe = {};
+                window._version_number = "1752556464.3988323";
+                frappe.ready_events = [];
+                frappe.ready = function(fn) {
+                        frappe.ready_events.push(fn);
+                }
+                window.dev_server = 0;
+                window.socketio_port = 9000;
+                window.show_language_picker = false;
+        </script>
+</head>
+<body frappe-session-status="logged-in" data-path="error" class="">
+
+
+
+
+
+
+
+
+
+
+<div id="page-error" data-path="None">
+
+<div class="page-content-wrapper">
+        <!-- breadcrumbs -->
+        <div class="page-breadcrumbs">
+
+
+
+        </div>
+
+
+        <main class="container">
+                <div class="page-header-wrapper">
+                        <div class="page-header">
+
+                        </div>
+
+
+                </div>
+
+                <div class="page_content">
+<style>
+        body {
+                background-color: var(--subtle-accent);
+                font-size: var(--text-base);
+        }
+
+        .error-content {
+                text-align: left;
+                margin-top: var(--margin-md);
+                border-radius: 8px;
+                background-color: #f5f7fa;
+                max-height: 400px;
+                overflow: auto;
+        }
+
+        code::-webkit-scrollbar {
+                display: none;
+        }
+</style>
+
+<div class="error-page">
+        <div>
+                <h4>
+                        Not Permitted
+                </h4>
+                <div class="details">
+                        <p>403: You do not have enough permissions to complete the action</p>
+
+                        <button class="btn btn-xs btn-secondary text-muted small view-error" >
+                                Show Error
+                        </button>
+
+                        <div class="error-content hidden">
+                                <pre><code>Traceback (most recent call last):
+  File "apps/frappe/frappe/app.py", line 112, in application
+    frappe.handler.handle()
+  File "apps/frappe/frappe/handler.py", line 51, in handle
+    data = execute_cmd(cmd)
+           ^^^^^^^^^^^^^^^^
+  File "apps/frappe/frappe/handler.py", line 81, in execute_cmd
+    is_whitelisted(method)
+  File "apps/frappe/frappe/__init__.py", line 672, in is_whitelisted        
+    throw(msg, PermissionError, title=_("Method Not Allowed"))
+  File "apps/frappe/frappe/utils/messages.py", line 145, in throw
+    msgprint(
+  File "apps/frappe/frappe/utils/messages.py", line 106, in msgprint        
+    _raise_exception()
+  File "apps/frappe/frappe/utils/messages.py", line 57, in _raise_exception 
+    raise exc
+frappe.exceptions.PermissionError: You are not permitted to access this resource.Function frappe.get_installed_apps is not whitelisted.
+</code></pre>
+                        </div>
+
+                </div>
+        </div>
+</div>
+
+</div>
+
+                <div class="page-footer"></div>
+        </main>
+
+</div>
+
+</div>
+
+
+<div id="all-symbols" style="display:none"></div><script type="text/javascript">fetch(`/assets/frappe/icons/timeless/icons.svg?v=${window._version_number}`, {credentials: "same-origin"}).then((r) => r.text()).then((svg) => {let 
+c = document.getElementById("all-symbols"); c.insertAdjacentHTML("beforeend", svg);});</script><script type="text/javascript">fetch(`/assets/frappe/icons/espresso/icons.svg?v=${window._version_number}`, {credentials: "same-origin"}).then((r) => r.text()).then((svg) => {let c = document.getElementById("all-symbols"); c.insertAdjacentHTML("beforeend", svg);});</script>
+        <!-- js should be loaded in body! -->
+        <script>
+                frappe.boot = {
+ "apps_data": {
+  "apps": [
+   {
+    "logo": "/assets/erpnext/images/mocxha-logo.png",
+    "name": "erpnext",
+    "route": "/app/home",
+    "title": "Mocxha ERP"
+   },
+   {
+    "logo": "/assets/helpdesk/desk/favicon.svg",
+    "name": "helpdesk",
+    "route": "/helpdesk",
+    "title": "Helpdesk"
+   }
+  ],
+  "default_path": "/apps",
+  "is_desk_apps": 0
+ },
+ "assets_json": {
+  "bank-reconciliation-tool.bundle.js": "/assets/erpnext/dist/js/bank-reconciliation-tool.bundle.FPQRAOXF.js",
+  "billing.bundle.js": "/assets/frappe/dist/js/billing.bundle.TQHLK7UT.js", 
+  "bom_configurator.bundle.js": "/assets/erpnext/dist/js/bom_configurator.bundle.HVCV6OL2.js",
+  "bootstrap-4-web.bundle.js": "/assets/frappe/dist/js/bootstrap-4-web.bundle.FOZOVELL.js",
+  "build_events.bundle.js": "/assets/frappe/dist/js/build_events.bundle.BCX32TWL.js",
+  "calendar.bundle.js": "/assets/frappe/dist/js/calendar.bundle.4A4YITIU.js",
+  "controls.bundle.js": "/assets/frappe/dist/js/controls.bundle.M6UWHP34.js",
+  "data_import_tools.bundle.js": "/assets/frappe/dist/js/data_import_tools.bundle.DJ5WZEDY.js",
+  "desk.bundle.css": "/assets/frappe/dist/css/desk.bundle.KBFKLM6A.css",    
+  "desk.bundle.js": "/assets/frappe/dist/js/desk.bundle.DWKDQSJG.js",       
+  "dialog.bundle.js": "/assets/frappe/dist/js/dialog.bundle.3F5VODSL.js",   
+  "email.bundle.css": "/assets/frappe/dist/css/email.bundle.3VVDSPYG.css",  
+  "erpnext-web.bundle.css": "/assets/erpnext/dist/css/erpnext-web.bundle.MM76TTSY.css",
+  "erpnext-web.bundle.js": "/assets/erpnext/dist/js/erpnext-web.bundle.J4A2DQB4.js",
+  "erpnext.bundle.css": "/assets/erpnext/dist/css/erpnext.bundle.G7FPDAXC.css",
+  "erpnext.bundle.js": "/assets/erpnext/dist/js/erpnext.bundle.IKS5YBBH.js",  "erpnext_email.bundle.css": "/assets/erpnext/dist/css/erpnext_email.bundle.SUFJEEQX.css",
+  "file_uploader.bundle.js": "/assets/frappe/dist/js/file_uploader.bundle.76SZJFKH.js",
+  "form.bundle.js": "/assets/frappe/dist/js/form.bundle.Y347LZCL.js",       
+  "form_builder.bundle.js": "/assets/frappe/dist/js/form_builder.bundle.NRPX4YQU.js",
+  "frappe-web.bundle.js": "/assets/frappe/dist/js/frappe-web.bundle.VFID6Y35.js",
+  "item-dashboard.bundle.js": "/assets/erpnext/dist/js/item-dashboard.bundle.WEGR7SLR.js",
+  "kanban_board.bundle.js": "/assets/frappe/dist/js/kanban_board.bundle.F6FPXXED.js",
+  "libs.bundle.js": "/assets/frappe/dist/js/libs.bundle.TIV7ZGVY.js",       
+  "list.bundle.js": "/assets/frappe/dist/js/list.bundle.PYRJTIW5.js",       
+  "login.bundle.css": "/assets/frappe/dist/css/login.bundle.MKIJYU27.css",  
+  "logtypes.bundle.js": "/assets/frappe/dist/js/logtypes.bundle.5KO3ZOOI.js",
+  "onboarding_tours.bundle.js": "/assets/frappe/dist/js/onboarding_tours.bundle.RAUR6X4Z.js",
+  "photoswipe.bundle.js": "/assets/frappe/dist/js/photoswipe.bundle.YSXZQA64.js",
+  "point-of-sale.bundle.js": "/assets/erpnext/dist/js/point-of-sale.bundle.7DSB547I.js",
+  "print.bundle.css": "/assets/frappe/dist/css/print.bundle.P5DPX4MA.css",  
+  "print_format.bundle.css": "/assets/frappe/dist/css/print_format.bundle.65FCEXSH.css",
+  "print_format_builder.bundle.js": "/assets/frappe/dist/js/print_format_builder.bundle.VQYWNAGA.js",
+  "report.bundle.css": "/assets/frappe/dist/css/report.bundle.XSLG4JOJ.css",  "report.bundle.js": "/assets/frappe/dist/js/report.bundle.25L2GBKH.js",   
+  "rtl_desk.bundle.css": "/assets/frappe/dist/css-rtl/desk.bundle.HR73MGYD.css",
+  "rtl_email.bundle.css": "/assets/frappe/dist/css-rtl/email.bundle.KP7QSZM3.css",
+  "rtl_erpnext-web.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext-web.bundle.SVVLLUH5.css",
+  "rtl_erpnext.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext.bundle.YT7SKD2I.css",
+  "rtl_erpnext_email.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext_email.bundle.YA344HSC.css",
+  "rtl_login.bundle.css": "/assets/frappe/dist/css-rtl/login.bundle.2KGNJTFK.css",
+  "rtl_print.bundle.css": "/assets/frappe/dist/css-rtl/print.bundle.E2VLRKJN.css",
+  "rtl_print_format.bundle.css": "/assets/frappe/dist/css-rtl/print_format.bundle.NOJAOQHP.css",
+  "rtl_report.bundle.css": "/assets/frappe/dist/css-rtl/report.bundle.2LWOMYCX.css",
+  "rtl_web_form.bundle.css": "/assets/frappe/dist/css-rtl/web_form.bundle.B3JEDJQE.css",
+  "rtl_website.bundle.css": "/assets/frappe/dist/css-rtl/website.bundle.6GGZZISL.css",
+  "sentry.bundle.js": "/assets/frappe/dist/js/sentry.bundle.AX44GVWW.js",   
+  "telemetry.bundle.js": "/assets/frappe/dist/js/telemetry.bundle.LKEZCADB.js",
+  "video_player.bundle.js": "/assets/frappe/dist/js/video_player.bundle.DUYYLSFO.js",
+  "web_form.bundle.css": "/assets/frappe/dist/css/web_form.bundle.YCYTHWI4.css",
+  "web_form.bundle.js": "/assets/frappe/dist/js/web_form.bundle.GMMEPHQZ.js",
+  "website.bundle.css": "/assets/frappe/dist/css/website.bundle.62RSFCW2.css",
+  "workflow_builder.bundle.js": "/assets/frappe/dist/js/workflow_builder.bundle.MPAFFZ3D.js"
+ },
+ "is_fc_site": 0,
+ "lang": "en",
+ "sitename": "app.mocxha.com",
+ "sysdefaults": {
+  "currency": "USD",
+  "date_format": "mm-dd-yyyy",
+  "first_day_of_the_week": "Sunday",
+  "float_precision": 3,
+  "number_format": "#,###.##",
+  "time_format": "HH:mm:ss"
+ },
+ "time_zone": {
+  "system": "America/Adak",
+  "user": "America/Adak"
+ }
+}
+                // for backward compatibility of some libs
+                frappe.sys_defaults = frappe.boot.sysdefaults;
+        </script>
+        <script type="text/javascript" src="/assets/frappe/dist/js/frappe-web.bundle.VFID6Y35.js"></script>
+
+        <script type="text/javascript" src="/website_script.js"></script>   
+        <script type="text/javascript" src="/assets/erpnext/dist/js/erpnext-web.bundle.J4A2DQB4.js"></script>
+<script>
+        let toggle_button = $(".view-error");
+        let error_log = $(".error-content");
+
+        toggle_button.on('click', () => {
+                if (error_log.hasClass("hidden")) {
+                        toggle_button.html(`Hide Error`);
+                        error_log.removeClass("hidden");
+                } else {
+                        toggle_button.html(`Show Error`);
+                        error_log.addClass("hidden");
+                }
+        })
+</script>
+
+        <script>frappe.csrf_token = "None";</script></body>
+</html>
+2025-07-16 21:57:20,113 - services.aida_agent - WARNING - ERPNext API call failed (attempt 1/3) for operation 'call': Expecting value: line 1 column 1 (char 0)
+<!DOCTYPE html>
+<!-- Built on Frappe. https://frappeframework.com/ -->
+<html lang="en" dir="ltr">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, 
+shrink-to-fit=no">
+        <meta name="generator" content="frappe">
+
+
+                <meta name="title" content="Not Permitted"><meta name="language" content="en"><meta property="og:type"  content="article"><meta property="og:title"  content="Not Permitted"><meta name="twitter:title" content="Not Permitted"><meta name="twitter:card" content="summary">
+
+
+        <title>Error</title>
+
+
+        <link
+                rel="shortcut icon"
+                href="/assets/erpnext/images/mocxha-favicon.svg"
+                type="image/x-icon"
+        >
+        <link type="text/css" rel="stylesheet" href="/assets/frappe/dist/css/website.bundle.62RSFCW2.css">
+<link type="text/css" rel="stylesheet" href="/assets/erpnext/dist/css/erpnext-web.bundle.MM76TTSY.css">
+<link rel="stylesheet" href="/assets/frappe/css/hljs-night-owl.css">        
+
+
+
+        <script>
+                window.frappe = {};
+                window._version_number = "1752556464.3988323";
+                frappe.ready_events = [];
+                frappe.ready = function(fn) {
+                        frappe.ready_events.push(fn);
+                }
+                window.dev_server = 0;
+                window.socketio_port = 9000;
+                window.show_language_picker = false;
+        </script>
+</head>
+<body frappe-session-status="logged-in" data-path="error" class="">
+
+
+
+
+
+
+
+
+
+
+<div id="page-error" data-path="None">
+
+<div class="page-content-wrapper">
+        <!-- breadcrumbs -->
+        <div class="page-breadcrumbs">
+
+
+
+        </div>
+
+
+        <main class="container">
+                <div class="page-header-wrapper">
+                        <div class="page-header">
+
+                        </div>
+
+
+                </div>
+
+                <div class="page_content">
+<style>
+        body {
+                background-color: var(--subtle-accent);
+                font-size: var(--text-base);
+        }
+
+        .error-content {
+                text-align: left;
+                margin-top: var(--margin-md);
+                border-radius: 8px;
+                background-color: #f5f7fa;
+                max-height: 400px;
+                overflow: auto;
+        }
+
+        code::-webkit-scrollbar {
+                display: none;
+        }
+</style>
+
+<div class="error-page">
+        <div>
+                <h4>
+                        Not Permitted
+                </h4>
+                <div class="details">
+                        <p>403: You do not have enough permissions to complete the action</p>
+
+                        <button class="btn btn-xs btn-secondary text-muted small view-error" >
+                                Show Error
+                        </button>
+
+                        <div class="error-content hidden">
+                                <pre><code>Traceback (most recent call last):
+  File "apps/frappe/frappe/app.py", line 112, in application
+    frappe.handler.handle()
+  File "apps/frappe/frappe/handler.py", line 51, in handle
+    data = execute_cmd(cmd)
+           ^^^^^^^^^^^^^^^^
+  File "apps/frappe/frappe/handler.py", line 81, in execute_cmd
+    is_whitelisted(method)
+  File "apps/frappe/frappe/__init__.py", line 672, in is_whitelisted        
+    throw(msg, PermissionError, title=_("Method Not Allowed"))
+  File "apps/frappe/frappe/utils/messages.py", line 145, in throw
+    msgprint(
+  File "apps/frappe/frappe/utils/messages.py", line 106, in msgprint        
+    _raise_exception()
+  File "apps/frappe/frappe/utils/messages.py", line 57, in _raise_exception 
+    raise exc
+frappe.exceptions.PermissionError: You are not permitted to access this resource.Function frappe.get_installed_apps is not whitelisted.
+</code></pre>
+                        </div>
+
+                </div>
+        </div>
+</div>
+
+</div>
+
+                <div class="page-footer"></div>
+        </main>
+
+</div>
+
+</div>
+
+
+<div id="all-symbols" style="display:none"></div><script type="text/javascript">fetch(`/assets/frappe/icons/timeless/icons.svg?v=${window._version_number}`, {credentials: "same-origin"}).then((r) => r.text()).then((svg) => {let 
+c = document.getElementById("all-symbols"); c.insertAdjacentHTML("beforeend", svg);});</script><script type="text/javascript">fetch(`/assets/frappe/icons/espresso/icons.svg?v=${window._version_number}`, {credentials: "same-origin"}).then((r) => r.text()).then((svg) => {let c = document.getElementById("all-symbols"); c.insertAdjacentHTML("beforeend", svg);});</script>
+        <!-- js should be loaded in body! -->
+        <script>
+                frappe.boot = {
+ "apps_data": {
+  "apps": [
+   {
+    "logo": "/assets/erpnext/images/mocxha-logo.png",
+    "name": "erpnext",
+    "route": "/app/home",
+    "title": "Mocxha ERP"
+   },
+   {
+    "logo": "/assets/helpdesk/desk/favicon.svg",
+    "name": "helpdesk",
+    "route": "/helpdesk",
+    "title": "Helpdesk"
+   }
+  ],
+  "default_path": "/apps",
+  "is_desk_apps": 0
+ },
+ "assets_json": {
+  "bank-reconciliation-tool.bundle.js": "/assets/erpnext/dist/js/bank-reconciliation-tool.bundle.FPQRAOXF.js",
+  "billing.bundle.js": "/assets/frappe/dist/js/billing.bundle.TQHLK7UT.js", 
+  "bom_configurator.bundle.js": "/assets/erpnext/dist/js/bom_configurator.bundle.HVCV6OL2.js",
+  "bootstrap-4-web.bundle.js": "/assets/frappe/dist/js/bootstrap-4-web.bundle.FOZOVELL.js",
+  "build_events.bundle.js": "/assets/frappe/dist/js/build_events.bundle.BCX32TWL.js",
+  "calendar.bundle.js": "/assets/frappe/dist/js/calendar.bundle.4A4YITIU.js",
+  "controls.bundle.js": "/assets/frappe/dist/js/controls.bundle.M6UWHP34.js",
+  "data_import_tools.bundle.js": "/assets/frappe/dist/js/data_import_tools.bundle.DJ5WZEDY.js",
+  "desk.bundle.css": "/assets/frappe/dist/css/desk.bundle.KBFKLM6A.css",    
+  "desk.bundle.js": "/assets/frappe/dist/js/desk.bundle.DWKDQSJG.js",       
+  "dialog.bundle.js": "/assets/frappe/dist/js/dialog.bundle.3F5VODSL.js",   
+  "email.bundle.css": "/assets/frappe/dist/css/email.bundle.3VVDSPYG.css",  
+  "erpnext-web.bundle.css": "/assets/erpnext/dist/css/erpnext-web.bundle.MM76TTSY.css",
+  "erpnext-web.bundle.js": "/assets/erpnext/dist/js/erpnext-web.bundle.J4A2DQB4.js",
+  "erpnext.bundle.css": "/assets/erpnext/dist/css/erpnext.bundle.G7FPDAXC.css",
+  "erpnext.bundle.js": "/assets/erpnext/dist/js/erpnext.bundle.IKS5YBBH.js",  "erpnext_email.bundle.css": "/assets/erpnext/dist/css/erpnext_email.bundle.SUFJEEQX.css",
+  "file_uploader.bundle.js": "/assets/frappe/dist/js/file_uploader.bundle.76SZJFKH.js",
+  "form.bundle.js": "/assets/frappe/dist/js/form.bundle.Y347LZCL.js",       
+  "form_builder.bundle.js": "/assets/frappe/dist/js/form_builder.bundle.NRPX4YQU.js",
+  "frappe-web.bundle.js": "/assets/frappe/dist/js/frappe-web.bundle.VFID6Y35.js",
+  "item-dashboard.bundle.js": "/assets/erpnext/dist/js/item-dashboard.bundle.WEGR7SLR.js",
+  "kanban_board.bundle.js": "/assets/frappe/dist/js/kanban_board.bundle.F6FPXXED.js",
+  "libs.bundle.js": "/assets/frappe/dist/js/libs.bundle.TIV7ZGVY.js",       
+  "list.bundle.js": "/assets/frappe/dist/js/list.bundle.PYRJTIW5.js",       
+  "login.bundle.css": "/assets/frappe/dist/css/login.bundle.MKIJYU27.css",  
+  "logtypes.bundle.js": "/assets/frappe/dist/js/logtypes.bundle.5KO3ZOOI.js",
+  "onboarding_tours.bundle.js": "/assets/frappe/dist/js/onboarding_tours.bundle.RAUR6X4Z.js",
+  "photoswipe.bundle.js": "/assets/frappe/dist/js/photoswipe.bundle.YSXZQA64.js",
+  "point-of-sale.bundle.js": "/assets/erpnext/dist/js/point-of-sale.bundle.7DSB547I.js",
+  "print.bundle.css": "/assets/frappe/dist/css/print.bundle.P5DPX4MA.css",  
+  "print_format.bundle.css": "/assets/frappe/dist/css/print_format.bundle.65FCEXSH.css",
+  "print_format_builder.bundle.js": "/assets/frappe/dist/js/print_format_builder.bundle.VQYWNAGA.js",
+  "report.bundle.css": "/assets/frappe/dist/css/report.bundle.XSLG4JOJ.css",  "report.bundle.js": "/assets/frappe/dist/js/report.bundle.25L2GBKH.js",   
+  "rtl_desk.bundle.css": "/assets/frappe/dist/css-rtl/desk.bundle.HR73MGYD.css",
+  "rtl_email.bundle.css": "/assets/frappe/dist/css-rtl/email.bundle.KP7QSZM3.css",
+  "rtl_erpnext-web.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext-web.bundle.SVVLLUH5.css",
+  "rtl_erpnext.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext.bundle.YT7SKD2I.css",
+  "rtl_erpnext_email.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext_email.bundle.YA344HSC.css",
+  "rtl_login.bundle.css": "/assets/frappe/dist/css-rtl/login.bundle.2KGNJTFK.css",
+  "rtl_print.bundle.css": "/assets/frappe/dist/css-rtl/print.bundle.E2VLRKJN.css",
+  "rtl_print_format.bundle.css": "/assets/frappe/dist/css-rtl/print_format.bundle.NOJAOQHP.css",
+  "rtl_report.bundle.css": "/assets/frappe/dist/css-rtl/report.bundle.2LWOMYCX.css",
+  "rtl_web_form.bundle.css": "/assets/frappe/dist/css-rtl/web_form.bundle.B3JEDJQE.css",
+  "rtl_website.bundle.css": "/assets/frappe/dist/css-rtl/website.bundle.6GGZZISL.css",
+  "sentry.bundle.js": "/assets/frappe/dist/js/sentry.bundle.AX44GVWW.js",   
+  "telemetry.bundle.js": "/assets/frappe/dist/js/telemetry.bundle.LKEZCADB.js",
+  "video_player.bundle.js": "/assets/frappe/dist/js/video_player.bundle.DUYYLSFO.js",
+  "web_form.bundle.css": "/assets/frappe/dist/css/web_form.bundle.YCYTHWI4.css",
+  "web_form.bundle.js": "/assets/frappe/dist/js/web_form.bundle.GMMEPHQZ.js",
+  "website.bundle.css": "/assets/frappe/dist/css/website.bundle.62RSFCW2.css",
+  "workflow_builder.bundle.js": "/assets/frappe/dist/js/workflow_builder.bundle.MPAFFZ3D.js"
+ },
+ "is_fc_site": 0,
+ "lang": "en",
+ "sitename": "app.mocxha.com",
+ "sysdefaults": {
+  "currency": "USD",
+  "date_format": "mm-dd-yyyy",
+  "first_day_of_the_week": "Sunday",
+  "float_precision": 3,
+  "number_format": "#,###.##",
+  "time_format": "HH:mm:ss"
+ },
+ "time_zone": {
+  "system": "America/Adak",
+  "user": "America/Adak"
+ }
+}
+                // for backward compatibility of some libs
+                frappe.sys_defaults = frappe.boot.sysdefaults;
+        </script>
+        <script type="text/javascript" src="/assets/frappe/dist/js/frappe-web.bundle.VFID6Y35.js"></script>
+
+        <script type="text/javascript" src="/website_script.js"></script>   
+        <script type="text/javascript" src="/assets/erpnext/dist/js/erpnext-web.bundle.J4A2DQB4.js"></script>
+<script>
+        let toggle_button = $(".view-error");
+        let error_log = $(".error-content");
+
+        toggle_button.on('click', () => {
+                if (error_log.hasClass("hidden")) {
+                        toggle_button.html(`Hide Error`);
+                        error_log.removeClass("hidden");
+                } else {
+                        toggle_button.html(`Show Error`);
+                        error_log.addClass("hidden");
+                }
+        })
+</script>
+
+        <script>frappe.csrf_token = "None";</script></body>
+</html>
+2025-07-16 21:57:21,612 - services.aida_agent - WARNING - ERPNext API call failed (attempt 2/3) for operation 'call': Expecting value: line 1 column 1 (char 0)
+<!DOCTYPE html>
+<!-- Built on Frappe. https://frappeframework.com/ -->
+<html lang="en" dir="ltr">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, 
+shrink-to-fit=no">
+        <meta name="generator" content="frappe">
+
+
+                <meta name="title" content="Not Permitted"><meta name="language" content="en"><meta property="og:type"  content="article"><meta property="og:title"  content="Not Permitted"><meta name="twitter:title" content="Not Permitted"><meta name="twitter:card" content="summary">
+
+
+        <title>Error</title>
+
+
+        <link
+                rel="shortcut icon"
+                href="/assets/erpnext/images/mocxha-favicon.svg"
+                type="image/x-icon"
+        >
+        <link type="text/css" rel="stylesheet" href="/assets/frappe/dist/css/website.bundle.62RSFCW2.css">
+<link type="text/css" rel="stylesheet" href="/assets/erpnext/dist/css/erpnext-web.bundle.MM76TTSY.css">
+<link rel="stylesheet" href="/assets/frappe/css/hljs-night-owl.css">        
+
+
+
+        <script>
+                window.frappe = {};
+                window._version_number = "1752556464.3988323";
+                frappe.ready_events = [];
+                frappe.ready = function(fn) {
+                        frappe.ready_events.push(fn);
+                }
+                window.dev_server = 0;
+                window.socketio_port = 9000;
+                window.show_language_picker = false;
+        </script>
+</head>
+<body frappe-session-status="logged-in" data-path="error" class="">
+
+
+
+
+
+
+
+
+
+
+<div id="page-error" data-path="None">
+
+<div class="page-content-wrapper">
+        <!-- breadcrumbs -->
+        <div class="page-breadcrumbs">
+
+
+
+        </div>
+
+
+        <main class="container">
+                <div class="page-header-wrapper">
+                        <div class="page-header">
+
+                        </div>
+
+
+                </div>
+
+                <div class="page_content">
+<style>
+        body {
+                background-color: var(--subtle-accent);
+                font-size: var(--text-base);
+        }
+
+        .error-content {
+                text-align: left;
+                margin-top: var(--margin-md);
+                border-radius: 8px;
+                background-color: #f5f7fa;
+                max-height: 400px;
+                overflow: auto;
+        }
+
+        code::-webkit-scrollbar {
+                display: none;
+        }
+</style>
+
+<div class="error-page">
+        <div>
+                <h4>
+                        Not Permitted
+                </h4>
+                <div class="details">
+                        <p>403: You do not have enough permissions to complete the action</p>
+
+                        <button class="btn btn-xs btn-secondary text-muted small view-error" >
+                                Show Error
+                        </button>
+
+                        <div class="error-content hidden">
+                                <pre><code>Traceback (most recent call last):
+  File "apps/frappe/frappe/app.py", line 112, in application
+    frappe.handler.handle()
+  File "apps/frappe/frappe/handler.py", line 51, in handle
+    data = execute_cmd(cmd)
+           ^^^^^^^^^^^^^^^^
+  File "apps/frappe/frappe/handler.py", line 81, in execute_cmd
+    is_whitelisted(method)
+  File "apps/frappe/frappe/__init__.py", line 672, in is_whitelisted        
+    throw(msg, PermissionError, title=_("Method Not Allowed"))
+  File "apps/frappe/frappe/utils/messages.py", line 145, in throw
+    msgprint(
+  File "apps/frappe/frappe/utils/messages.py", line 106, in msgprint        
+    _raise_exception()
+  File "apps/frappe/frappe/utils/messages.py", line 57, in _raise_exception 
+    raise exc
+frappe.exceptions.PermissionError: You are not permitted to access this resource.Function frappe.get_installed_apps is not whitelisted.
+</code></pre>
+                        </div>
+
+                </div>
+        </div>
+</div>
+
+</div>
+
+                <div class="page-footer"></div>
+        </main>
+
+</div>
+
+</div>
+
+
+<div id="all-symbols" style="display:none"></div><script type="text/javascript">fetch(`/assets/frappe/icons/timeless/icons.svg?v=${window._version_number}`, {credentials: "same-origin"}).then((r) => r.text()).then((svg) => {let 
+c = document.getElementById("all-symbols"); c.insertAdjacentHTML("beforeend", svg);});</script><script type="text/javascript">fetch(`/assets/frappe/icons/espresso/icons.svg?v=${window._version_number}`, {credentials: "same-origin"}).then((r) => r.text()).then((svg) => {let c = document.getElementById("all-symbols"); c.insertAdjacentHTML("beforeend", svg);});</script>
+        <!-- js should be loaded in body! -->
+        <script>
+                frappe.boot = {
+ "apps_data": {
+  "apps": [
+   {
+    "logo": "/assets/erpnext/images/mocxha-logo.png",
+    "name": "erpnext",
+    "route": "/app/home",
+    "title": "Mocxha ERP"
+   },
+   {
+    "logo": "/assets/helpdesk/desk/favicon.svg",
+    "name": "helpdesk",
+    "route": "/helpdesk",
+    "title": "Helpdesk"
+   }
+  ],
+  "default_path": "/apps",
+  "is_desk_apps": 0
+ },
+ "assets_json": {
+  "bank-reconciliation-tool.bundle.js": "/assets/erpnext/dist/js/bank-reconciliation-tool.bundle.FPQRAOXF.js",
+  "billing.bundle.js": "/assets/frappe/dist/js/billing.bundle.TQHLK7UT.js", 
+  "bom_configurator.bundle.js": "/assets/erpnext/dist/js/bom_configurator.bundle.HVCV6OL2.js",
+  "bootstrap-4-web.bundle.js": "/assets/frappe/dist/js/bootstrap-4-web.bundle.FOZOVELL.js",
+  "build_events.bundle.js": "/assets/frappe/dist/js/build_events.bundle.BCX32TWL.js",
+  "calendar.bundle.js": "/assets/frappe/dist/js/calendar.bundle.4A4YITIU.js",
+  "controls.bundle.js": "/assets/frappe/dist/js/controls.bundle.M6UWHP34.js",
+  "data_import_tools.bundle.js": "/assets/frappe/dist/js/data_import_tools.bundle.DJ5WZEDY.js",
+  "desk.bundle.css": "/assets/frappe/dist/css/desk.bundle.KBFKLM6A.css",    
+  "desk.bundle.js": "/assets/frappe/dist/js/desk.bundle.DWKDQSJG.js",       
+  "dialog.bundle.js": "/assets/frappe/dist/js/dialog.bundle.3F5VODSL.js",   
+  "email.bundle.css": "/assets/frappe/dist/css/email.bundle.3VVDSPYG.css",  
+  "erpnext-web.bundle.css": "/assets/erpnext/dist/css/erpnext-web.bundle.MM76TTSY.css",
+  "erpnext-web.bundle.js": "/assets/erpnext/dist/js/erpnext-web.bundle.J4A2DQB4.js",
+  "erpnext.bundle.css": "/assets/erpnext/dist/css/erpnext.bundle.G7FPDAXC.css",
+  "erpnext.bundle.js": "/assets/erpnext/dist/js/erpnext.bundle.IKS5YBBH.js",  "erpnext_email.bundle.css": "/assets/erpnext/dist/css/erpnext_email.bundle.SUFJEEQX.css",
+  "file_uploader.bundle.js": "/assets/frappe/dist/js/file_uploader.bundle.76SZJFKH.js",
+  "form.bundle.js": "/assets/frappe/dist/js/form.bundle.Y347LZCL.js",       
+  "form_builder.bundle.js": "/assets/frappe/dist/js/form_builder.bundle.NRPX4YQU.js",
+  "frappe-web.bundle.js": "/assets/frappe/dist/js/frappe-web.bundle.VFID6Y35.js",
+  "item-dashboard.bundle.js": "/assets/erpnext/dist/js/item-dashboard.bundle.WEGR7SLR.js",
+  "kanban_board.bundle.js": "/assets/frappe/dist/js/kanban_board.bundle.F6FPXXED.js",
+  "libs.bundle.js": "/assets/frappe/dist/js/libs.bundle.TIV7ZGVY.js",       
+  "list.bundle.js": "/assets/frappe/dist/js/list.bundle.PYRJTIW5.js",       
+  "login.bundle.css": "/assets/frappe/dist/css/login.bundle.MKIJYU27.css",  
+  "logtypes.bundle.js": "/assets/frappe/dist/js/logtypes.bundle.5KO3ZOOI.js",
+  "onboarding_tours.bundle.js": "/assets/frappe/dist/js/onboarding_tours.bundle.RAUR6X4Z.js",
+  "photoswipe.bundle.js": "/assets/frappe/dist/js/photoswipe.bundle.YSXZQA64.js",
+  "point-of-sale.bundle.js": "/assets/erpnext/dist/js/point-of-sale.bundle.7DSB547I.js",
+  "print.bundle.css": "/assets/frappe/dist/css/print.bundle.P5DPX4MA.css",  
+  "print_format.bundle.css": "/assets/frappe/dist/css/print_format.bundle.65FCEXSH.css",
+  "print_format_builder.bundle.js": "/assets/frappe/dist/js/print_format_builder.bundle.VQYWNAGA.js",
+  "report.bundle.css": "/assets/frappe/dist/css/report.bundle.XSLG4JOJ.css",  "report.bundle.js": "/assets/frappe/dist/js/report.bundle.25L2GBKH.js",   
+  "rtl_desk.bundle.css": "/assets/frappe/dist/css-rtl/desk.bundle.HR73MGYD.css",
+  "rtl_email.bundle.css": "/assets/frappe/dist/css-rtl/email.bundle.KP7QSZM3.css",
+  "rtl_erpnext-web.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext-web.bundle.SVVLLUH5.css",
+  "rtl_erpnext.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext.bundle.YT7SKD2I.css",
+  "rtl_erpnext_email.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext_email.bundle.YA344HSC.css",
+  "rtl_login.bundle.css": "/assets/frappe/dist/css-rtl/login.bundle.2KGNJTFK.css",
+  "rtl_print.bundle.css": "/assets/frappe/dist/css-rtl/print.bundle.E2VLRKJN.css",
+  "rtl_print_format.bundle.css": "/assets/frappe/dist/css-rtl/print_format.bundle.NOJAOQHP.css",
+  "rtl_report.bundle.css": "/assets/frappe/dist/css-rtl/report.bundle.2LWOMYCX.css",
+  "rtl_web_form.bundle.css": "/assets/frappe/dist/css-rtl/web_form.bundle.B3JEDJQE.css",
+  "rtl_website.bundle.css": "/assets/frappe/dist/css-rtl/website.bundle.6GGZZISL.css",
+  "sentry.bundle.js": "/assets/frappe/dist/js/sentry.bundle.AX44GVWW.js",   
+  "telemetry.bundle.js": "/assets/frappe/dist/js/telemetry.bundle.LKEZCADB.js",
+  "video_player.bundle.js": "/assets/frappe/dist/js/video_player.bundle.DUYYLSFO.js",
+  "web_form.bundle.css": "/assets/frappe/dist/css/web_form.bundle.YCYTHWI4.css",
+  "web_form.bundle.js": "/assets/frappe/dist/js/web_form.bundle.GMMEPHQZ.js",
+  "website.bundle.css": "/assets/frappe/dist/css/website.bundle.62RSFCW2.css",
+  "workflow_builder.bundle.js": "/assets/frappe/dist/js/workflow_builder.bundle.MPAFFZ3D.js"
+ },
+ "is_fc_site": 0,
+ "lang": "en",
+ "sitename": "app.mocxha.com",
+ "sysdefaults": {
+  "currency": "USD",
+  "date_format": "mm-dd-yyyy",
+  "first_day_of_the_week": "Sunday",
+  "float_precision": 3,
+  "number_format": "#,###.##",
+  "time_format": "HH:mm:ss"
+ },
+ "time_zone": {
+  "system": "America/Adak",
+  "user": "America/Adak"
+ }
+}
+                // for backward compatibility of some libs
+                frappe.sys_defaults = frappe.boot.sysdefaults;
+        </script>
+        <script type="text/javascript" src="/assets/frappe/dist/js/frappe-web.bundle.VFID6Y35.js"></script>
+
+        <script type="text/javascript" src="/website_script.js"></script>   
+        <script type="text/javascript" src="/assets/erpnext/dist/js/erpnext-web.bundle.J4A2DQB4.js"></script>
+<script>
+        let toggle_button = $(".view-error");
+        let error_log = $(".error-content");
+
+        toggle_button.on('click', () => {
+                if (error_log.hasClass("hidden")) {
+                        toggle_button.html(`Hide Error`);
+                        error_log.removeClass("hidden");
+                } else {
+                        toggle_button.html(`Show Error`);
+                        error_log.addClass("hidden");
+                }
+        })
+</script>
+
+        <script>frappe.csrf_token = "None";</script></body>
+</html>
+2025-07-16 21:57:23,991 - services.aida_agent - WARNING - ERPNext API call failed (attempt 3/3) for operation 'call': Expecting value: line 1 column 1 (char 0)
+2025-07-16 21:57:23,993 - services.aida_agent - ERROR - All ERPNext API retry attempts failed for call.
+2025-07-16 21:57:23,995 - services.aida_agent - WARNING - frappe.get_installed_apps API call failed: Expecting value: line 1 column 1 (char 0). Falling 
+back to module analysis.
+2025-07-16 21:57:23,997 - services.aida_agent - INFO - Discovering apps via 
+doctype module analysis (fallback)...
+2025-07-16 21:57:24,605 - services.aida_agent - INFO - 📱 Discovered apps via module analysis: ['amazon', 'bulk_transaction', 'ecommerce_integrations', 
+'edi', 'erpnext', 'erpnext_integrations', 'frappe', 'helpdesk', 'maintenance', 'raven', 'setup', 'shopify', 'subcontracting', 'telephony', 'unicommerce', 'zenoti']
+2025-07-16 21:57:24,605 - services.aida_agent - INFO - Discovering doctypes...
+2025-07-16 21:57:25,224 - services.aida_agent - INFO - 📋 Discovered 488 doctypes across 37 modules.
+2025-07-16 21:57:25,225 - services.aida_agent - INFO -       - Accounts: 85 
+doctypes
+2025-07-16 21:57:25,227 - services.aida_agent - INFO -       - Core: 60 doctypes
+2025-07-16 21:57:25,228 - services.aida_agent - INFO -       - Stock: 43 doctypes
+2025-07-16 21:57:25,228 - services.aida_agent - INFO -       - Desk: 30 doctypes
+2025-07-16 21:57:25,229 - services.aida_agent - INFO -       - Setup: 29 doctypes
+2025-07-16 21:57:25,230 - services.aida_agent - INFO -       - Helpdesk: 28 
+doctypes
+2025-07-16 21:57:25,230 - services.aida_agent - INFO -       - Website: 27 doctypes
+2025-07-16 21:57:25,231 - services.aida_agent - INFO -       - Integrations: 20 doctypes
+2025-07-16 21:57:25,233 - services.aida_agent - INFO - 🤖 Aida AI Agent initialized successfully!
+ialized successfully!
+2025-07-16 21:57:25,234 - services.aida_agent - INFO - 📱 Discovered 16 installed apps.
+2025-07-16 21:57:25,235 - services.aida_agent - INFO - 📋 Found 488 available doctypes.
+2025-07-16 21:57:25,242 - services.aida_agent - INFO - ✅ Agent executor creaed successfully.
+ted successfully.
+2025-07-16 21:57:25,243 - flask_server - INFO - New session 83302520-98f1-4008-a67b-f91e0cc39def created for user: Administrator
+2025-07-16 21:57:25,245 - werkzeug - INFO - 127.0.0.1 - - [16/Jul/2025 21:57:25] "POST /init_session HTTP/1.1" 200 -
+2025-07-16 21:57:51,324 - werkzeug - INFO - 127.0.0.1 - - [16/Jul/2025 21:57:51] "GET /health HTTP/1.1" 200 -
+2025-07-16 21:57:57,325 - werkzeug - INFO - 127.0.0.1 - - [16/Jul/2025 21:57:57] "GET /health HTTP/1.1" 200 -

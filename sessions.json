@@ -1,0 +1,88 @@
+{
+  "sessions": {
+    "2a799de1-4fb9-4e7d-917b-bc9511b0fdaa": {
+      "session_id": "2a799de1-4fb9-4e7d-917b-bc9511b0fdaa",
+      "erpnext_url": "http://46.62.138.17:8000",
+      "username": "Administrator",
+      "password_hash": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+      "google_api_key_hash": "e8cc4b747383212fc9c25a575d9c6177979978e5bc50c0c4aa552dafcb1ea8a5",
+      "site_base_url": "http://46.62.138.17:8000",
+      "created_at": "2025-07-10T08:41:09.654658",
+      "last_accessed": "2025-07-10T08:42:17.179293",
+      "browser_fingerprint": "21d46b8ad0302fbd2ad24eb70884695d"
+    },
+    "11ccba6b-f74b-400a-a5a3-756bc88fa3fa": {
+      "session_id": "11ccba6b-f74b-400a-a5a3-756bc88fa3fa",
+      "erpnext_url": "http://46.62.138.17:8000/",
+      "username": "Administrator",
+      "password_hash": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+      "google_api_key_hash": "e8cc4b747383212fc9c25a575d9c6177979978e5bc50c0c4aa552dafcb1ea8a5",
+      "site_base_url": "http://46.62.138.17:8000/",
+      "created_at": "2025-07-10T21:58:59.698186",
+      "last_accessed": "2025-07-10T22:52:39.180590",
+      "browser_fingerprint": "e523fa829cda71cd82e02fe038df7677"
+    }
+  },
+  "chat_history": {
+    "2a799de1-4fb9-4e7d-917b-bc9511b0fdaa": [
+      {
+        "session_id": "2a799de1-4fb9-4e7d-917b-bc9511b0fdaa",
+        "timestamp": "2025-07-10T08:42:18.692138",
+        "user_message": "Hey how are you?",
+        "ai_response": "I am doing well, thank you for asking! How can I help you with ERPNext or your CRM activities today?",
+        "query_result": null,
+        "doctype": null
+      }
+    ],
+    "11ccba6b-f74b-400a-a5a3-756bc88fa3fa": [
+      {
+        "session_id": "11ccba6b-f74b-400a-a5a3-756bc88fa3fa",
+        "timestamp": "2025-07-10T22:42:29.201246",
+        "user_message": "hey how are you?",
+        "ai_response": "I'm doing well, thank you for asking! How can I help you with ERPNext or your CRM today?",
+        "query_result": null,
+        "doctype": null
+      },
+      {
+        "session_id": "11ccba6b-f74b-400a-a5a3-756bc88fa3fa",
+        "timestamp": "2025-07-10T22:45:36.463022",
+        "user_message": "Hey how are you?",
+        "ai_response": "I'm doing well, thank you for asking! How can I help you with ERPNext or your CRM today? We have several applications installed, including ERPNext, Amazon, Shopify, and a few others. Let me know if you'd like to explore any of them.",
+        "query_result": null,
+        "doctype": null
+      },
+      {
+        "session_id": "11ccba6b-f74b-400a-a5a3-756bc88fa3fa",
+        "timestamp": "2025-07-10T22:45:55.275419",
+        "user_message": "what doctypes are available for shopify?",
+        "ai_response": "The Shopify app has one doctype: Shopify Setting.",
+        "query_result": null,
+        "doctype": null
+      },
+      {
+        "session_id": "11ccba6b-f74b-400a-a5a3-756bc88fa3fa",
+        "timestamp": "2025-07-10T22:46:59.892563",
+        "user_message": "Get all the orders synced with shopify store",
+        "ai_response": "How are Sales Orders originating from Shopify identified in your ERPNext system? Is there a specific field or value that indicates the order source is Shopify?",
+        "query_result": null,
+        "doctype": null
+      },
+      {
+        "session_id": "11ccba6b-f74b-400a-a5a3-756bc88fa3fa",
+        "timestamp": "2025-07-10T22:47:52.705020",
+        "user_message": "how to create a new sales report?",
+        "ai_response": "## How to Create a Report\n\n### Quick Access Links:\n<button onclick=\"window.open('http://46.62.138.17:8000/app/report/new', '_blank')\" style=\"background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 8px 16px; margin: 4px; border-radius: 6px; cursor: pointer; font-size: 14px; transition: transform 0.2s;\" onmouseover=\"this.style.transform='scale(1.05)'\" onmouseout=\"this.style.transform='scale(1)'\">New Record</button>\n<button onclick=\"window.open('http://46.62.138.17:8000/app/report', '_blank')\" style=\"background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 8px 16px; margin: 4px; border-radius: 6px; cursor: pointer; font-size: 14px; transition: transform 0.2s;\" onmouseover=\"this.style.transform='scale(1.05)'\" onmouseout=\"this.style.transform='scale(1)'\">List View</button>\n\n### Step-by-Step Instructions to Create a Report:\n\n1. **Navigate to Report**: Click on the Report List View button above\n2. **Click 'New'**: Look for the blue 'New' button and click it\n3. **Fill Required Fields**: Complete the following mandatory fields:\n4. **Save**: Click the 'Save' button to create the Report\n5. **Submit** (if applicable): Some documents require submission after saving\n\n### \ud83d\udca1 Helpful Tips:\n- Use the search bar in the Report list to quickly find records\n- You can customize the list view by adding/removing columns\n- Use filters to narrow down records based on specific criteria\n- Check the document status (Draft, Submitted, Cancelled) before making changes\n\n",
+        "query_result": null,
+        "doctype": null
+      },
+      {
+        "session_id": "11ccba6b-f74b-400a-a5a3-756bc88fa3fa",
+        "timestamp": "2025-07-10T22:52:40.712209",
+        "user_message": "what was my last message?",
+        "ai_response": "The user is asking about Sales Orders originating from Shopify and how they are identified in ERPNext.",
+        "query_result": null,
+        "doctype": null
+      }
+    ]
+  }
+}
